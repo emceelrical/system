@@ -1,0 +1,40 @@
+@media only screen and (max-width: 768px){
+    .wd{
+        position: absolute;
+        top: 246px;
+      }
+    
+      .wdd{
+        font-family: cursive;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        text-align: center;
+      }
+    
+      .wd p{
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: 10px;
+        font-size: 15px;
+      }
+    
+      .wd a{
+        margin-left: 90px;
+        text-decoration: none;
+        color: white;
+        background-color: #0099FB;
+        padding: 8px 8px;
+        border-radius: 10px;
+      }
+    
+      .tto {
+       padding-top: 20px; 
+      }
+    
+      .tto a{
+        text-align: center;
+      }
+    }

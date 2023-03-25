@@ -1,0 +1,552 @@
+@media screen and (min-width:1200px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    header{
+        background-color: #EB248C;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    header p{
+        margin-left: 30px;
+        font: bold;
+    }
+
+    header input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width:80%;
+      margin-left: 90px;
+    }
+
+    
+    /* top nav starts  here */
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 25px 20px;
+        text-decoration: none;
+        font-size: 17px;
+        
+      }
+      
+      .active {
+        color: white;
+        margin-left: 200px; 
+      }
+    
+      .aactive{
+        color: white;
+        text-align: left;
+      }
+
+     
+    
+      @media screen and (max-width: 600px) {
+        .active {
+            background-color: rgb(1, 1, 27);
+            color: white;
+           margin-left: 0px; 
+          }
+        }    
+      
+      
+      
+      .topnav .icon {
+        display: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 17px;    
+        border: none;
+        outline: none;
+        color: black;
+        padding: 25px 20px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color: #555;
+        color: white;
+      } */
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive .dropdown {float: none;}
+        .topnav.responsive .dropdown-content {position: relative;}
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      
+      /* top nav ends here */
+    
+      /* form begins */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px ;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px ;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 12px ;
+      }
+      
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      /* form ends */
+    
+    
+    
+      
+      .bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .wd{
+        position: absolute;
+        top: 350px;
+      }
+    
+      .wdd{
+        font-family: cursive;
+        font-size: 50px;
+        margin-left: 250px;
+        margin-right: 70px;
+        text-align: center;
+        font: bold;
+        text-align: center;
+      }
+    
+      .wd p{
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-top: 20px;
+        font-size: 30px;
+      }
+    
+      .wd a{
+        margin-left: 120px;
+        text-decoration: none;
+        color: white;
+        background-color: #0099FB;
+        padding: 15px 15px;
+        border-radius: 10px;
+      }
+    
+      .tto {
+       padding-top: 20px; 
+      }
+    
+      .tto a{
+        text-align: center;
+      }
+    
+    
+      /* image sample */
+      /* Float four columns side by side */
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+       
+        
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 5px;}
+      
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-radius:20px;
+      }
+    
+      .column img{
+        border-radius: 50%;
+      }
+    
+      .rt{
+        padding-top: 80px;
+        padding-bottom: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      /* about section */
+      .gh p{
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      /* trusted brand */
+       /* Float four columns side by side */
+       .jknblp{
+        margin-left: 80px;
+        margin-right: 40px;
+        padding-top: 50px;
+        
+       }
+
+       .jknblp h2{
+        text-align: center;
+        padding-bottom: 30px;
+        
+       }
+
+       /* Create two equal columns that floats next to each other */
+.columnlf {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.columnlf img{
+  border-radius: 50px;
+  
+}
+
+/* Clear floats after the columns */
+.rowlf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+       /* trusted brand ends here */
+    
+    
+      /* shop link */
+      .sabn{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #0099FB;;
+        padding: 14px 14px;
+        border-radius: 10px;
+      }
+
+      .san  {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .sabn:hover{
+        background-color: #0099FB;;
+        color: white;
+      }
+    
+      
+      /* testimonial */
+      .containerk {
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 16px;
+        margin: 16px 0;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      
+      .containerk::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .containerk img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+      
+      .containerk span {
+        font-size: 20px;
+        margin-right: 15px;
+      }
+      
+      @media (max-width: 600px) {
+        .containerk {
+            text-align: center;
+        }
+        .containerk img {
+            margin: auto;
+            float: none;
+            display: block;
+        }
+      }
+
+      .l0{
+        text-align: center;
+      }
+      /*  */
+    
+      /* contact form */
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        padding-top: 30px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        
+      }
+    
+      /* footer */
+      footer{
+        background-color: black;
+        color: white; 
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      footer p{
+        margin-left: 30px;
+        font-size: 15px;
+      }
+    
+      /* banner */
+      
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        font: bold;
+        font-size: 20px;
+        font-family: fantasy;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    
+      .bottom-left {
+        position: absolute;
+        bottom: 180px;
+        left: 50px;
+        color: BLACK;
+      }
+    
+      .bottom-left a {
+        text-decoration: none;
+        border: 1px solid BLACK;
+        color: white;
+        padding: 12px 12px;
+      }
+    
+     
+    
+    
+    /* footer column */
+    /* Create THREE equal columns that floats next to each other */
+    .columnf {
+      float: left;
+      width: 30.33%;
+      padding: 10px;
+      height: 120px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .rowf:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* ends here */
+    
+    .fa .rowf {
+      padding: 20px;
+      font-size: 300px;
+      width: 500px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+      font-size: 90px;
+      
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    
+    .mo{
+      padding-top: 20px;
+      margin: 60px;
+      padding-bottom: 20px;
+    }
+    
+    .moo{
+      padding-top: 20px;
+      margin: 60px;
+      padding-bottom: 20px;
+    
+    }
+    
+    
+    
+}    
